@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Photo & Video Gallery | AIM Bhopal</title>
+  <meta name="description" content="Explore the AIM Bhopal gallery — campus photos, events, student activities, convocation, and cultural fest images from Anand Institute of Management.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--b1:#1A237E;--b2:#1565C0;--b3:#29B6F6;--bl:#E3F2FD;--bll:#F5F8FD;--gold:#C8960C;--gold2:#F0C040;--white:#FFFFFF;--ink:#0D1B2A;--ink2:#2C3E50;--ink3:#546E7A;--ink4:#90A4AE;--border:rgba(26,35,126,0.12);--r:8px;--rm:12px;--rl:20px;--sh:0 2px 12px rgba(26,35,126,0.10);--shm:0 8px 36px rgba(26,35,126,0.15);--tr:0.24s cubic-bezier(0.4,0,0.2,1);--fd:'Playfair Display',Georgia,serif;--fb:'Plus Jakarta Sans',sans-serif}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:var(--fb);background:var(--white);color:var(--ink);overflow-x:hidden;line-height:1.6}img{display:block;max-width:100%;height:auto}a{color:inherit;text-decoration:none}ul{list-style:none}button{cursor:pointer;font-family:inherit;border:none;background:none}
+    .container{max-width:1180px;margin:0 auto;padding:0 24px}
+    .topbar{background:var(--b1);padding:8px 0}.topbar-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}.topbar-social{display:flex;gap:10px}.soc-icon{width:30px;height:30px;background:rgba(255,255,255,0.12);border-radius:6px;display:grid;place-items:center;color:#fff;font-size:13px;font-weight:700}.soc-icon:hover{background:var(--b3);color:var(--b1)}.topbar-links{display:flex;align-items:center;gap:18px}.topbar-links a{color:rgba(255,255,255,0.78);font-size:12.5px}.topbar-links a:hover{color:var(--b3)}.topbar-sep{color:rgba(255,255,255,0.25)}
+    .navbar{background:var(--white);border-bottom:2px solid var(--b1);position:sticky;top:0;z-index:1000;box-shadow:var(--sh)}.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:10px}.logo{display:flex;align-items:center;gap:12px;flex-shrink:0}.logo-img{width:56px;height:56px;object-fit:contain}.logo-text .name{font-family:var(--fd);font-size:16px;font-weight:700;color:var(--b1);display:block;line-height:1.2}.logo-text .tag{font-size:9.5px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--b2);display:block}
+    .nav-menu{display:flex;align-items:center;gap:1px}.nav-menu>li{position:relative}.nav-menu a{display:flex;align-items:center;gap:3px;font-size:13px;font-weight:600;color:var(--ink2);padding:7px 10px;border-radius:var(--r);transition:all var(--tr);white-space:nowrap}.nav-menu a:hover,.nav-menu .active>a{color:var(--b1);background:var(--bl)}.nav-menu .active>a{font-weight:700}
+    .nav-apply{background:var(--b1)!important;color:#fff!important;padding:9px 20px!important;border-radius:var(--r)!important;font-weight:700!important;box-shadow:0 3px 12px rgba(26,35,126,0.28);margin-left:4px}
+    .ham{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;padding:0}.ham span{display:block;height:2px;background:var(--ink);border-radius:2px;transition:all 0.3s}.ham.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}.ham.open span:nth-child(2){opacity:0}.ham.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+    .mob-menu{display:none;position:fixed;inset:72px 0 0;background:var(--white);z-index:999;overflow-y:auto;padding:16px 24px 40px;opacity:0;pointer-events:none;transition:opacity 0.25s}.mob-menu.open{display:block;opacity:1;pointer-events:all}.mob-link{display:block;font-size:16px;font-weight:600;color:var(--b1);padding:13px 0;border-bottom:1px solid var(--border)}.mob-cta{display:block;margin-top:18px;background:var(--b1);color:#fff!important;text-align:center;padding:14px;border-radius:var(--r);font-size:15px;font-weight:700}
+    .page-hero{background:var(--b1);padding:60px 0 52px;position:relative;overflow:hidden}.page-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 70% 50%,rgba(41,182,246,0.10) 0%,transparent 60%)}.page-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold2),var(--gold),transparent)}
+    .breadcrumb{display:flex;align-items:center;gap:8px;font-size:12.5px;color:rgba(255,255,255,0.50);margin-bottom:16px}.breadcrumb a{color:rgba(255,255,255,0.50)}.breadcrumb a:hover{color:var(--b3)}.breadcrumb span{color:rgba(255,255,255,0.25)}
+    .page-hero h1{font-family:var(--fd);font-size:clamp(32px,4.5vw,54px);font-weight:800;color:#fff;line-height:1.1;margin-bottom:12px}.page-hero h1 em{font-style:italic;color:var(--b3)}.page-hero p{font-size:15.5px;color:rgba(255,255,255,0.65);max-width:580px;line-height:1.75}
+    .sec{padding:80px 0}.kicker{font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--b2);display:flex;align-items:center;gap:8px;margin-bottom:10px}.kicker::before{content:'';width:22px;height:2px;background:var(--b2);border-radius:2px}.h2{font-family:var(--fd);font-size:clamp(28px,3.8vw,42px);font-weight:700;color:var(--b1);line-height:1.18;margin-bottom:14px}.lead{font-size:15.5px;color:var(--ink3);line-height:1.75;max-width:680px;margin-bottom:48px}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity 0.65s ease,transform 0.65s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+    /* FILTER TABS */
+    .filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:36px}
+    .filter-btn{padding:9px 20px;border-radius:40px;font-size:13px;font-weight:600;color:var(--ink3);background:var(--bll);border:1px solid var(--border);cursor:pointer;transition:all var(--tr)}.filter-btn:hover{color:var(--b1);background:var(--bl)}.filter-btn.active{background:var(--b1);color:#fff;border-color:var(--b1)}
+    /* GALLERY GRID */
+    .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .gal-item{position:relative;aspect-ratio:1;border-radius:var(--rm);overflow:hidden;cursor:pointer;transition:transform var(--tr)}
+    .gal-item:hover{transform:scale(1.03)}.gal-item:hover .gal-overlay{opacity:1}
+    .gal-item.wide{grid-column:span 2}.gal-item.tall{grid-row:span 2}
+    .gal-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:56px}
+    .gal-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,35,126,0.85) 0%,transparent 60%);opacity:0;transition:opacity var(--tr);display:flex;align-items:flex-end;padding:16px}
+    .gal-caption{color:#fff;font-size:13px;font-weight:600}
+    /* CATEGORY COLORS */
+    .cat-campus{background:linear-gradient(145deg,#0D2468,#1565C0)}
+    .cat-events{background:linear-gradient(145deg,#1565C0,#29B6F6)}
+    .cat-sports{background:linear-gradient(145deg,#0A2052,#1A6EB8)}
+    .cat-academic{background:linear-gradient(145deg,#112060,#1254A0)}
+    .cat-cultural{background:linear-gradient(145deg,#1A237E,#29B6F6)}
+    /* VIDEO SECTION */
+    .vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .vid-card{background:var(--bll);border:1px solid var(--border);border-radius:var(--rm);overflow:hidden;transition:all var(--tr)}.vid-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
+    .vid-thumb{aspect-ratio:16/9;background:var(--b1);display:flex;align-items:center;justify-content:center;font-size:48px;position:relative;cursor:pointer}
+    .vid-play{width:60px;height:60px;background:rgba(255,255,255,0.20);border-radius:50%;display:grid;place-items:center;font-size:22px;transition:all var(--tr)}.vid-thumb:hover .vid-play{background:rgba(255,255,255,0.35);transform:scale(1.1)}
+    .vid-info{padding:16px}.vid-info h3{font-size:14.5px;font-weight:700;color:var(--b1);margin-bottom:4px}.vid-info p{font-size:12.5px;color:var(--ink3)}
+    /* CTA */
+    .cta-sec{background:linear-gradient(135deg,var(--b1) 0%,var(--b2) 100%);padding:60px 0;position:relative;overflow:hidden}.cta-sec::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,0.05) 1px,transparent 1px);background-size:22px 22px}.cta-sec::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold2),var(--gold),transparent)}
+    .cta-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:28px;position:relative;z-index:1}.cta-inner h2{font-family:var(--fd);font-weight:700;color:#fff;font-size:clamp(24px,3.2vw,36px);margin-bottom:8px}.cta-inner p{font-size:15px;color:rgba(255,255,255,0.72);max-width:480px;line-height:1.6}.cta-btns{display:flex;gap:12px;flex-wrap:wrap;flex-shrink:0}
+    .btn-cta{background:#fff;color:var(--b1);padding:13px 28px;border-radius:var(--r);font-family:var(--fb);font-weight:700;font-size:14.5px;transition:all var(--tr)}.btn-cta:hover{transform:translateY(-2px)}.btn-cta-o{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.42);padding:12px 28px;border-radius:var(--r);font-family:var(--fb);font-weight:600;font-size:14.5px;transition:all var(--tr)}.btn-cta-o:hover{border-color:#fff;background:rgba(255,255,255,0.10)}
+    footer{background:var(--b1);color:rgba(255,255,255,0.62);padding:60px 0 0}.ft-bar{height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2),var(--b3));margin-bottom:60px}.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:44px}.ft-brand p{font-size:13px;line-height:1.75;max-width:270px;margin:14px 0 18px}.ft-logo-name{font-family:var(--fd);font-size:16px;font-weight:700;color:#fff!important;display:block;line-height:1.2}.ft-logo-sub{font-size:9.5px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--b3)!important;display:block}.ft-social{display:flex;gap:9px}.ft-soc{width:36px;height:36px;background:rgba(255,255,255,0.09);border:1px solid rgba(255,255,255,0.10);border-radius:var(--r);display:grid;place-items:center;font-size:13px;font-weight:700;color:rgba(255,255,255,0.65);transition:all var(--tr)}.ft-soc:hover{background:var(--b3);color:var(--b1)}.ft-col h4{font-size:10.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-bottom:16px;padding-bottom:9px;border-bottom:1px solid rgba(255,255,255,0.08)}.ft-col ul{display:flex;flex-direction:column;gap:9px}.ft-col a{font-size:13px;color:rgba(255,255,255,0.52);transition:color var(--tr);display:flex;align-items:center;gap:5px}.ft-col a::before{content:'›';color:var(--b3);font-weight:700}.ft-col a:hover{color:#fff}.ft-bot{border-top:1px solid rgba(255,255,255,0.08);padding:18px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}.ft-bot p{font-size:12px;color:rgba(255,255,255,0.28)}.ft-bot-links{display:flex;gap:18px;flex-wrap:wrap}.ft-bot-links a{font-size:12px;color:rgba(255,255,255,0.28);transition:color var(--tr)}.ft-bot-links a:hover{color:rgba(255,255,255,0.75)}
+    @media(max-width:980px){.nav-menu{display:none}.ham{display:flex}.gal-grid{grid-template-columns:repeat(3,1fr)}.vid-grid{grid-template-columns:1fr 1fr}.ft-grid{grid-template-columns:1fr 1fr;gap:24px}}
+    @media(max-width:600px){.topbar{display:none}.container{padding:0 16px}.sec{padding:56px 0}.gal-grid{grid-template-columns:1fr 1fr}.gal-item.wide{grid-column:span 1}.vid-grid{grid-template-columns:1fr}.ft-grid{grid-template-columns:1fr}.cta-inner{flex-direction:column;text-align:center}.cta-btns{justify-content:center}.ft-bot{flex-direction:column;text-align:center}}
+  </style>
+</head>
+<body>
+<div class="topbar"><div class="container"><div class="topbar-inner"><div class="topbar-social"><a href="#" class="soc-icon">f</a><a href="#" class="soc-icon">&#9650;</a><a href="#" class="soc-icon">&#9654;</a></div><div class="topbar-links"><a href="disclosures.html#grievance">Grievance Redressal</a><span class="topbar-sep">|</span><a href="disclosures.html#nirf">NIRF</a><span class="topbar-sep">|</span><a href="disclosures.html">Mandatory Disclosure</a></div></div></div></div>
+<header class="navbar"><div class="container"><nav class="nav-inner">
+  <a href="index.html" class="logo"><img src="images/aim-logo.png" alt="AIM Logo" class="logo-img" width="56" height="56"><div class="logo-text"><span class="name">Anand Institute of Management</span><span class="tag">AIM Bhopal &middot; Est. 2015</span></div></a>
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="admissions.html">Admission</a></li>
+    <li><a href="academics.html">Academics</a></li>
+    <li><a href="faculty.html">Faculty</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="campus.html">Campus Life</a></li>
+    <li><a href="placements.html">Placement Cell</a></li>
+    <li class="active"><a href="gallery.html">Gallery</a></li>
+    <li><a href="disclosures.html">Mandatory Disclosure</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="enquiry.html" class="nav-apply">Apply Now</a></li>
+  </ul>
+  <button class="ham" aria-label="Toggle menu" aria-expanded="false" id="ham"><span></span><span></span><span></span></button>
+</nav></div>
+<div class="mob-menu" id="mobMenu" aria-hidden="true"><a href="index.html" class="mob-link">Home</a><a href="about.html" class="mob-link">About AIM</a><a href="admissions.html" class="mob-link">Admission</a><a href="academics.html" class="mob-link">Academics</a><a href="faculty.html" class="mob-link">Faculty</a><a href="training.html" class="mob-link">Training</a><a href="campus.html" class="mob-link">Campus Life</a><a href="placements.html" class="mob-link">Placement Cell</a><a href="gallery.html" class="mob-link">Gallery</a><a href="disclosures.html" class="mob-link">Mandatory Disclosure</a><a href="contact.html" class="mob-link">Contact</a><a href="enquiry.html" class="mob-cta">Apply Now &rarr;</a></div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Gallery</span></nav>
+    <h1>Photo &amp; Video<br><em>Gallery</em></h1>
+    <p>Glimpses of life at AIM Bhopal — campus moments, cultural events, sports, convocations, and the vibrant community that makes AIM special.</p>
+  </div>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section class="sec" style="background:var(--white)">
+  <div class="container">
+    <p class="kicker">Campus Life</p>
+    <h2 class="h2">Photo <em style="font-style:italic;color:var(--b2)">Gallery</em></h2>
+    <p class="lead">Capturing memories, milestones, and moments from AIM's vibrant academic and campus life.</p>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterGal(this,'all')">All Photos</button>
+      <button class="filter-btn" onclick="filterGal(this,'campus')">Campus</button>
+      <button class="filter-btn" onclick="filterGal(this,'events')">Events &amp; Fests</button>
+      <button class="filter-btn" onclick="filterGal(this,'sports')">Sports</button>
+      <button class="filter-btn" onclick="filterGal(this,'academic')">Academic</button>
+      <button class="filter-btn" onclick="filterGal(this,'cultural')">Cultural</button>
+    </div>
+
+    <div class="gal-grid" id="galGrid">
+      <div class="gal-item wide cat-campus reveal" data-cat="campus"><div class="gal-bg">&#127979;</div><div class="gal-overlay"><span class="gal-caption">AIM Campus — Barkheda Nathu, Neelbad, Bhopal</span></div></div>
+      <div class="gal-item cat-events reveal" data-cat="events"><div class="gal-bg">&#127881;</div><div class="gal-overlay"><span class="gal-caption">Boundless Knowledge Fest</span></div></div>
+      <div class="gal-item cat-events reveal" data-cat="events"><div class="gal-bg">&#127942;</div><div class="gal-overlay"><span class="gal-caption">Management Integration Awards</span></div></div>
+
+      <div class="gal-item cat-sports reveal" data-cat="sports"><div class="gal-bg">&#127944;</div><div class="gal-overlay"><span class="gal-caption">Basketball Court Inauguration</span></div></div>
+      <div class="gal-item wide cat-campus reveal" data-cat="campus"><div class="gal-bg">&#128218;</div><div class="gal-overlay"><span class="gal-caption">AIM Library — 8,000+ Books</span></div></div>
+      <div class="gal-item cat-cultural reveal" data-cat="cultural"><div class="gal-bg">&#127917;</div><div class="gal-overlay"><span class="gal-caption">Extravaganza Cultural Fest</span></div></div>
+
+      <div class="gal-item cat-academic reveal" data-cat="academic"><div class="gal-bg">&#127908;</div><div class="gal-overlay"><span class="gal-caption">Guest Lecture — Industry Leaders</span></div></div>
+      <div class="gal-item cat-academic reveal" data-cat="academic"><div class="gal-bg">&#127891;</div><div class="gal-overlay"><span class="gal-caption">Annual Convocation Ceremony</span></div></div>
+      <div class="gal-item cat-cultural reveal" data-cat="cultural"><div class="gal-bg">&#127917;</div><div class="gal-overlay"><span class="gal-caption">Fresher's Welcome — Parigraha</span></div></div>
+      <div class="gal-item cat-sports reveal" data-cat="sports"><div class="gal-bg">&#9917;</div><div class="gal-overlay"><span class="gal-caption">AIM Premier League — Sports Fest</span></div></div>
+
+      <div class="gal-item cat-campus reveal" data-cat="campus"><div class="gal-bg">&#128187;</div><div class="gal-overlay"><span class="gal-caption">Smart Classroom — Hi-Tech Learning</span></div></div>
+      <div class="gal-item cat-events reveal" data-cat="events"><div class="gal-bg">&#128101;</div><div class="gal-overlay"><span class="gal-caption">Invasion — HR Live Project</span></div></div>
+      <div class="gal-item cat-academic reveal" data-cat="academic"><div class="gal-bg">&#128218;</div><div class="gal-overlay"><span class="gal-caption">Research Methodology Workshop</span></div></div>
+      <div class="gal-item cat-campus reveal" data-cat="campus"><div class="gal-bg">&#127968;</div><div class="gal-overlay"><span class="gal-caption">Student Hostel &amp; Dormitories</span></div></div>
+
+      <div class="gal-item cat-events reveal" data-cat="events"><div class="gal-bg">&#127942;</div><div class="gal-overlay"><span class="gal-caption">Strategym — Annual Business Convention</span></div></div>
+      <div class="gal-item cat-cultural reveal" data-cat="cultural"><div class="gal-bg">&#127908;</div><div class="gal-overlay"><span class="gal-caption">Music &amp; Performance Night</span></div></div>
+      <div class="gal-item cat-sports reveal" data-cat="sports"><div class="gal-bg">&#127993;</div><div class="gal-overlay"><span class="gal-caption">Badminton Tournament</span></div></div>
+      <div class="gal-item cat-academic reveal" data-cat="academic"><div class="gal-bg">&#128202;</div><div class="gal-overlay"><span class="gal-caption">Industry Visit — Corporate Exposure</span></div></div>
+
+      <div class="gal-item cat-campus reveal" data-cat="campus"><div class="gal-bg">&#127860;</div><div class="gal-overlay"><span class="gal-caption">Campus Canteen &amp; Bistro</span></div></div>
+      <div class="gal-item cat-events reveal" data-cat="events"><div class="gal-bg">&#10084;</div><div class="gal-overlay"><span class="gal-caption">Prayas — Blood Donation Camp</span></div></div>
+      <div class="gal-item cat-cultural reveal" data-cat="cultural"><div class="gal-bg">&#127807;</div><div class="gal-overlay"><span class="gal-caption">Tree Plantation Drive — Annual Day</span></div></div>
+      <div class="gal-item cat-academic reveal" data-cat="academic"><div class="gal-bg">&#127981;</div><div class="gal-overlay"><span class="gal-caption">Summer Internship Presentations</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO GALLERY -->
+<section class="sec" style="background:var(--bll)">
+  <div class="container">
+    <p class="kicker">Video Gallery</p>
+    <h2 class="h2">Video <em style="font-style:italic;color:var(--b2)">Highlights</em></h2>
+    <p class="lead">Watch AIM's campus tours, event highlights, student testimonials, and convocation ceremonies.</p>
+    <div class="vid-grid">
+      <div class="vid-card reveal">
+        <div class="vid-thumb" style="background:linear-gradient(135deg,#0D2468,#1565C0)">
+          <div class="vid-play">&#9654;</div>
+        </div>
+        <div class="vid-info"><h3>AIM Campus Tour</h3><p>A complete walkthrough of AIM's facilities, classrooms, library, and sports complex.</p></div>
+      </div>
+      <div class="vid-card reveal">
+        <div class="vid-thumb" style="background:linear-gradient(135deg,#1565C0,#29B6F6)">
+          <div class="vid-play">&#9654;</div>
+        </div>
+        <div class="vid-info"><h3>Convocation Ceremony 2024</h3><p>Highlights from AIM's Annual Convocation — celebrating the graduating batch of 2024.</p></div>
+      </div>
+      <div class="vid-card reveal">
+        <div class="vid-thumb" style="background:linear-gradient(135deg,#0A2052,#1A6EB8)">
+          <div class="vid-play">&#9654;</div>
+        </div>
+        <div class="vid-info"><h3>Student Testimonials</h3><p>Hear from AIM graduates about their MBA journey, placements, and campus experience.</p></div>
+      </div>
+      <div class="vid-card reveal">
+        <div class="vid-thumb" style="background:linear-gradient(135deg,#1A237E,#29B6F6)">
+          <div class="vid-play">&#9654;</div>
+        </div>
+        <div class="vid-info"><h3>Boundless Knowledge Fest</h3><p>Highlights from AIM's flagship annual management fest — competitions, quiz, and performances.</p></div>
+      </div>
+      <div class="vid-card reveal">
+        <div class="vid-thumb" style="background:linear-gradient(135deg,#112060,#1254A0)">
+          <div class="vid-play">&#9654;</div>
+        </div>
+        <div class="vid-info"><h3>Director's Message 2024</h3><p>Prof. Sanjay Payasi addresses incoming students at the MBA Induction Programme.</p></div>
+      </div>
+      <div class="vid-card reveal">
+        <div class="vid-thumb" style="background:linear-gradient(135deg,#0D2468,#1565C0)">
+          <div class="vid-play">&#9654;</div>
+        </div>
+        <div class="vid-info"><h3>AIM Sports Fest — Premier League</h3><p>Action-packed highlights from the AIM Premier League — cricket, basketball, and more.</p></div>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--ink4);text-align:center;margin-top:24px;font-style:italic">&#9432; Videos will open in a new tab. Contact the Web Committee at web@aim-bhopal.org to submit your event videos.</p>
+  </div>
+</section>
+
+<section class="cta-sec">
+  <div class="container"><div class="cta-inner">
+    <div><h2>Be Part of the AIM Story</h2><p>Apply for MBA 2025–26 and create your own memories at AIM Bhopal — a campus where learning meets life.</p></div>
+    <div class="cta-btns"><a href="enquiry.html" class="btn-cta">Apply Now</a><a href="campus.html" class="btn-cta-o">Explore Campus</a></div>
+  </div></div>
+</section>
+</main>
+
+<footer><div class="ft-bar"></div><div class="container"><div class="ft-grid">
+  <div class="ft-brand"><a href="index.html" class="logo"><img src="images/aim-logo.png" alt="AIM Logo" class="logo-img" width="52" height="52"><div class="logo-text"><span class="ft-logo-name">Anand Institute of Management</span><span class="ft-logo-sub">AIM Bhopal &middot; Est. 2015</span></div></a><p>AICTE approved MBA college in Bhopal, MP. Shaping future leaders since 2015.</p><div class="ft-social"><a href="#" class="ft-soc">f</a><a href="#" class="ft-soc">in</a><a href="#" class="ft-soc">Li</a><a href="#" class="ft-soc">&#9654;</a></div></div>
+  <div class="ft-col"><h4>About</h4><ul><li><a href="about.html">About AIM</a></li><li><a href="about.html#vision">Vision &amp; Mission</a></li><li><a href="about.html#governance">Governance</a></li></ul></div>
+  <div class="ft-col"><h4>Academics</h4><ul><li><a href="academics.html">MBA Programme</a></li><li><a href="academics.html#curriculum">Curriculum</a></li><li><a href="faculty.html">Faculty</a></li></ul></div>
+  <div class="ft-col"><h4>Admissions</h4><ul><li><a href="admissions.html">Apply Now</a></li><li><a href="admissions.html#fees">Fee Structure</a></li><li><a href="placements.html">Placements</a></li><li><a href="disclosures.html">Disclosures</a></li></ul></div>
+</div><div class="ft-bot"><p>&copy; 2025 Anand Institute of Management, Bhopal. All rights reserved.</p><nav class="ft-bot-links"><a href="disclosures.html">AICTE Disclosures</a><a href="disclosures.html#nirf">NIRF</a><a href="contact.html">Contact</a></nav></div></div></footer>
+<script>
+const ham=document.getElementById('ham'),mobMenu=document.getElementById('mobMenu');
+ham.addEventListener('click',()=>{const o=mobMenu.classList.toggle('open');ham.classList.toggle('open',o);ham.setAttribute('aria-expanded',o);mobMenu.setAttribute('aria-hidden',!o);document.body.style.overflow=o?'hidden':''});
+document.addEventListener('click',e=>{if(!ham.contains(e.target)&&!mobMenu.contains(e.target)){mobMenu.classList.remove('open');ham.classList.remove('open');ham.setAttribute('aria-expanded','false');mobMenu.setAttribute('aria-hidden','true');document.body.style.overflow=''}});
+window.addEventListener('resize',()=>{if(window.innerWidth>980){mobMenu.classList.remove('open');ham.classList.remove('open');document.body.style.overflow=''}});
+document.querySelectorAll('.reveal').forEach(el=>{new IntersectionObserver(([e])=>{if(e.isIntersecting){const s=Array.from(el.parentElement.querySelectorAll('.reveal'));el.style.transitionDelay=(s.indexOf(el)*60)+'ms';el.classList.add('visible')}},{threshold:0.08}).observe(el)});
+function filterGal(btn,cat){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.gal-item').forEach(item=>{
+    if(cat==='all'||item.dataset.cat===cat){item.style.display='';item.style.opacity='1';}
+    else{item.style.opacity='0.15';item.style.transform='scale(0.97)';}
+  });
+}
+</script>
+</body>
+</html>

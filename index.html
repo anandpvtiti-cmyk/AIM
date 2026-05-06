@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About AIM Bhopal | Vision, Mission & Governance | Anand Institute of Management</title>
+  <meta name="description" content="Learn about Anand Institute of Management (AIM) Bhopal — our vision, mission, values, governance structure, Chairman's message, Director's message and social responsibility initiatives.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.aim-bhopal.org/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --b1:#1A237E; --b2:#1565C0; --b3:#29B6F6;
+      --bl:#E3F2FD; --bll:#F5F8FD;
+      --gold:#C8960C; --gold2:#F0C040;
+      --white:#FFFFFF; --ink:#0D1B2A; --ink2:#2C3E50; --ink3:#546E7A; --ink4:#90A4AE;
+      --border:rgba(26,35,126,0.12);
+      --r:8px; --rm:12px; --rl:20px;
+      --sh:0 2px 12px rgba(26,35,126,0.10); --shm:0 8px 36px rgba(26,35,126,0.15);
+      --tr:0.24s cubic-bezier(0.4,0,0.2,1);
+      --fd:'Playfair Display',Georgia,serif; --fb:'Plus Jakarta Sans',sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--fb);background:var(--white);color:var(--ink);overflow-x:hidden;line-height:1.6}
+    img{display:block;max-width:100%;height:auto} a{color:inherit;text-decoration:none} ul{list-style:none} button{cursor:pointer;font-family:inherit;border:none;background:none}
+    .container{max-width:1180px;margin:0 auto;padding:0 24px}
+    .skip-link{position:absolute;top:-100%;left:12px;z-index:9999;background:var(--b1);color:#fff;padding:8px 16px;border-radius:0 0 8px 8px;font-weight:700}
+    .skip-link:focus{top:0}
+
+    /* TOPBAR */
+    .topbar{background:var(--b1);padding:8px 0;font-size:13px;font-weight:500}
+    .topbar-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+    .topbar-social{display:flex;gap:10px;align-items:center}
+    .soc-icon{width:30px;height:30px;background:rgba(255,255,255,0.12);border-radius:6px;display:grid;place-items:center;color:#fff;font-size:13px;font-weight:700;transition:background var(--tr)}
+    .soc-icon:hover{background:var(--b3);color:var(--b1)}
+    .topbar-links{display:flex;align-items:center;gap:18px}
+    .topbar-links a{color:rgba(255,255,255,0.78);font-size:12.5px;transition:color var(--tr)}
+    .topbar-links a:hover{color:var(--b3)}
+    .topbar-sep{color:rgba(255,255,255,0.25)}
+
+    /* NAVBAR */
+    .navbar{background:var(--white);border-bottom:2px solid var(--b1);position:sticky;top:0;z-index:1000;box-shadow:var(--sh)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:10px}
+    .logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
+    .logo-img{width:56px;height:56px;object-fit:contain}
+    .logo-text .name{font-family:var(--fd);font-size:16px;font-weight:700;color:var(--b1);display:block;line-height:1.2}
+    .logo-text .tag{font-size:9.5px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--b2);display:block}
+    .nav-menu{display:flex;align-items:center;gap:1px}
+    .nav-menu>li{position:relative}
+    .nav-menu a{display:flex;align-items:center;gap:3px;font-size:13px;font-weight:600;color:var(--ink2);padding:7px 10px;border-radius:var(--r);transition:all var(--tr);white-space:nowrap}
+    .nav-menu a:hover,.nav-menu .active>a{color:var(--b1);background:var(--bl)}
+    .nav-menu .active>a{font-weight:700}
+    .has-drop:hover .drop{display:block}
+    .drop{display:none;position:absolute;top:calc(100% + 4px);left:0;background:var(--white);border:1px solid var(--border);border-top:3px solid var(--b2);border-radius:0 0 var(--rm) var(--rm);box-shadow:var(--shm);min-width:195px;padding:6px;z-index:300}
+    .drop a{display:block;padding:9px 14px;border-radius:var(--r);font-size:13px;color:var(--ink2);white-space:nowrap}
+    .drop a:hover{background:var(--bl);color:var(--b1)}
+    .chev{width:11px;height:11px;opacity:0.5;flex-shrink:0}
+    .nav-apply{background:var(--b1)!important;color:#fff!important;padding:9px 20px!important;border-radius:var(--r)!important;font-weight:700!important;box-shadow:0 3px 12px rgba(26,35,126,0.28);margin-left:4px}
+    .nav-apply:hover{background:var(--b2)!important;transform:translateY(-1px)!important}
+    .ham{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;padding:0}
+    .ham span{display:block;height:2px;background:var(--ink);border-radius:2px;transition:all 0.3s}
+    .ham.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+    .ham.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+    .ham.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+    .mob-menu{display:none;position:fixed;inset:72px 0 0;background:var(--white);z-index:999;overflow-y:auto;padding:16px 24px 40px;opacity:0;pointer-events:none;transition:opacity 0.25s}
+    .mob-menu.open{display:block;opacity:1;pointer-events:all}
+    .mob-link{display:block;font-size:16px;font-weight:600;color:var(--b1);padding:13px 0;border-bottom:1px solid var(--border)}
+    .mob-sub a{display:block;font-size:14px;color:var(--ink3);padding:8px 0 8px 16px;border-bottom:1px solid var(--border)}
+    .mob-sub a:hover{color:var(--b1)}
+    .mob-cta{display:block;margin-top:18px;background:var(--b1);color:#fff!important;text-align:center;padding:14px;border-radius:var(--r);font-size:15px;font-weight:700}
+
+    /* PAGE HERO */
+    .page-hero{background:var(--b1);padding:60px 0 52px;position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 70% 50%,rgba(41,182,246,0.10) 0%,transparent 60%)}
+    .page-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold2),var(--gold),transparent)}
+    .breadcrumb{display:flex;align-items:center;gap:8px;font-size:12.5px;color:rgba(255,255,255,0.50);margin-bottom:16px}
+    .breadcrumb a{color:rgba(255,255,255,0.50);transition:color var(--tr)}
+    .breadcrumb a:hover{color:var(--b3)}
+    .breadcrumb span{color:rgba(255,255,255,0.25)}
+    .page-hero h1{font-family:var(--fd);font-size:clamp(32px,4.5vw,54px);font-weight:800;color:#fff;line-height:1.1;margin-bottom:12px}
+    .page-hero h1 em{font-style:italic;color:var(--b3)}
+    .page-hero p{font-size:15.5px;color:rgba(255,255,255,0.65);max-width:580px;line-height:1.75}
+    .hero-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+    .h-pill{background:rgba(255,255,255,0.09);border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.82);font-size:11.5px;font-weight:600;padding:5px 13px;border-radius:6px}
+
+    /* SECTION UTILITIES */
+    .sec{padding:80px 0}
+    .kicker{font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--b2);display:flex;align-items:center;gap:8px;margin-bottom:10px}
+    .kicker::before{content:'';width:22px;height:2px;background:var(--b2);border-radius:2px}
+    .h2{font-family:var(--fd);font-size:clamp(28px,3.8vw,42px);font-weight:700;color:var(--b1);line-height:1.18;margin-bottom:14px}
+    .lead{font-size:15.5px;color:var(--ink3);line-height:1.75;max-width:680px;margin-bottom:48px}
+    .row-hd{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:18px;margin-bottom:48px}
+    .row-hd .lead{margin-bottom:0}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity 0.65s ease,transform 0.65s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+
+    /* BUTTONS */
+    .btn-pri{display:inline-flex;align-items:center;gap:7px;background:var(--b1);color:#fff;font-family:var(--fb);font-size:14px;font-weight:700;padding:13px 28px;border-radius:var(--r);box-shadow:0 4px 18px rgba(26,35,126,0.28);transition:all var(--tr)}
+    .btn-pri:hover{background:var(--b2);transform:translateY(-2px)}
+    .btn-sec{display:inline-flex;align-items:center;gap:7px;background:transparent;color:var(--b1);font-family:var(--fb);font-size:14px;font-weight:600;padding:12px 28px;border-radius:var(--r);border:2px solid var(--b1);transition:all var(--tr)}
+    .btn-sec:hover{background:var(--bl)}
+
+    /* ─── ABOUT INTRO ─── */
+    .about-intro{background:var(--white)}
+    .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+    .intro-img-wrap{position:relative;border-radius:var(--rl);overflow:hidden;aspect-ratio:4/3;background:linear-gradient(135deg,var(--b1),var(--b2))}
+    .intro-img-wrap img{width:100%;height:100%;object-fit:cover}
+    .intro-img-badge{position:absolute;bottom:20px;left:20px;background:#fff;border-radius:var(--rm);padding:14px 18px;box-shadow:var(--shm)}
+    .intro-img-badge .num{font-family:var(--fd);font-size:32px;font-weight:800;color:var(--b1);line-height:1}
+    .intro-img-badge .lbl{font-size:11px;font-weight:600;color:var(--ink3);text-transform:uppercase;letter-spacing:0.08em;margin-top:2px}
+    .intro-text p{font-size:15px;color:var(--ink3);line-height:1.8;margin-bottom:16px}
+    .intro-text p:last-of-type{margin-bottom:28px}
+    .accred-list{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+    .accred-item{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--ink2)}
+    .accred-dot{width:8px;height:8px;background:var(--b3);border-radius:50%;flex-shrink:0}
+
+    /* ─── VISION MISSION ─── */
+    .vm-sec{background:var(--b1);padding:80px 0;position:relative;overflow:hidden}
+    .vm-sec::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 80%,rgba(41,182,246,0.08) 0%,transparent 50%)}
+    .vm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .vm-card{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-top:3px solid var(--b3);border-radius:var(--rl);padding:32px 28px;transition:all var(--tr)}
+    .vm-card:hover{background:rgba(255,255,255,0.12);transform:translateY(-4px)}
+    .vm-icon{font-size:32px;margin-bottom:16px}
+    .vm-card h3{font-family:var(--fd);font-size:22px;font-weight:700;color:#fff;margin-bottom:12px}
+    .vm-card p{font-size:14px;color:rgba(255,255,255,0.65);line-height:1.75}
+
+    /* ─── OBJECTIVES ─── */
+    .obj-sec{background:var(--bll)}
+    .obj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .obj-card{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--b2);border-radius:0 var(--rm) var(--rm) 0;padding:24px 28px;transition:all var(--tr)}
+    .obj-card:hover{border-left-color:var(--b3);box-shadow:var(--shm);transform:translateX(4px)}
+    .obj-num{font-family:var(--fd);font-size:36px;font-weight:800;color:var(--bl);line-height:1;margin-bottom:8px}
+    .obj-card h3{font-size:16px;font-weight:700;color:var(--b1);margin-bottom:8px}
+    .obj-card p{font-size:13.5px;color:var(--ink3);line-height:1.65}
+
+    /* ─── VALUES ─── */
+    .val-sec{background:var(--white)}
+    .val-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .val-card{background:var(--bll);border:1px solid var(--border);border-radius:var(--rm);padding:24px 20px;text-align:center;transition:all var(--tr)}
+    .val-card:hover{background:var(--bl);transform:translateY(-4px);box-shadow:var(--shm)}
+    .val-icon{font-size:32px;margin-bottom:12px}
+    .val-card h3{font-size:15px;font-weight:700;color:var(--b1);margin-bottom:6px}
+    .val-card p{font-size:12.5px;color:var(--ink3);line-height:1.6}
+
+    /* ─── CHIEF ORGANISATION ─── */
+    .chief-sec{background:var(--bll)}
+    .chief-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+    .chief-card{background:var(--white);border:1px solid var(--border);border-top:3px solid var(--b2);border-radius:0 0 var(--rl) var(--rl);padding:32px}
+    .chief-card h3{font-family:var(--fd);font-size:20px;font-weight:700;color:var(--b1);margin-bottom:14px}
+    .chief-card p{font-size:14px;color:var(--ink3);line-height:1.75;margin-bottom:12px}
+    .chief-reg{background:var(--bl);border-radius:var(--r);padding:16px 20px;margin-top:16px}
+    .chief-reg p{font-size:13px;color:var(--b1);font-weight:600;margin-bottom:4px}
+    .chief-reg p:last-child{margin-bottom:0}
+
+    /* ─── GOVERNING BODY TABLE ─── */
+    .gov-sec{background:var(--white)}
+    .table-wrap{overflow-x:auto;border-radius:var(--rm);box-shadow:var(--sh)}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    thead{background:var(--b1)}
+    thead th{padding:14px 18px;text-align:left;color:#fff;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
+    tbody tr{border-bottom:1px solid var(--border);transition:background var(--tr)}
+    tbody tr:last-child{border-bottom:none}
+    tbody tr:hover{background:var(--bl)}
+    tbody td{padding:13px 18px;color:var(--ink2);font-size:14px}
+    tbody td:first-child{color:var(--ink4);font-weight:600;width:50px}
+    .td-name{font-weight:700;color:var(--b1)}
+    .td-badge{display:inline-block;background:var(--bl);border-radius:5px;padding:3px 10px;font-size:11.5px;font-weight:700;color:var(--b2)}
+
+    /* ─── MESSAGES ─── */
+    .msg-sec{background:var(--bll)}
+    .msg-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .msg-card{background:var(--white);border:1px solid var(--border);border-radius:var(--rl);padding:34px;position:relative;overflow:hidden;transition:box-shadow var(--tr)}
+    .msg-card:hover{box-shadow:var(--shm)}
+    .msg-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(to bottom,var(--b2),var(--b3));border-radius:4px 0 0 4px}
+    .msg-qm{font-family:var(--fd);font-size:96px;font-weight:700;color:var(--bl);position:absolute;top:10px;right:18px;line-height:1;user-select:none;pointer-events:none}
+    .msg-role{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--b2);margin-bottom:12px}
+    .msg-card blockquote{font-family:var(--fd);font-style:italic;font-size:clamp(15px,1.6vw,18px);font-weight:600;color:var(--ink);line-height:1.65;margin-bottom:20px;max-width:92%}
+    .msg-card p.msg-body{font-size:13.5px;color:var(--ink3);line-height:1.75;margin-bottom:20px}
+    .msg-author{display:flex;align-items:center;gap:13px}
+    .msg-av{width:52px;height:52px;background:var(--b1);border-radius:50%;display:grid;place-items:center;font-family:var(--fd);font-size:17px;font-weight:700;color:var(--b3);flex-shrink:0}
+    .msg-name{font-size:14.5px;font-weight:700;color:var(--b1)}
+    .msg-title{font-size:12px;color:var(--ink3);margin-top:2px}
+
+    /* ─── ADVISORY BOARD ─── */
+    .adv-sec{background:var(--white)}
+    .adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .adv-card{background:var(--bll);border:1px solid var(--border);border-top:3px solid var(--b2);border-radius:0 0 var(--rm) var(--rm);padding:24px;transition:all var(--tr)}
+    .adv-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
+    .adv-av{width:52px;height:52px;background:var(--b1);border-radius:50%;display:grid;place-items:center;font-family:var(--fd);font-size:18px;font-weight:700;color:var(--b3);margin-bottom:14px}
+    .adv-card h3{font-size:15px;font-weight:700;color:var(--b1);margin-bottom:4px}
+    .adv-card .role{font-size:12px;color:var(--b2);font-weight:600;margin-bottom:6px}
+    .adv-card .inst{font-size:12.5px;color:var(--ink3)}
+
+    /* ─── CSR ─── */
+    .csr-sec{background:var(--b1);padding:80px 0;position:relative;overflow:hidden}
+    .csr-sec::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 80% 20%,rgba(41,182,246,0.07) 0%,transparent 50%)}
+    .csr-sec .kicker{color:var(--b3)}
+    .csr-sec .kicker::before{background:var(--b3)}
+    .csr-sec .h2{color:#fff}
+    .csr-sec .lead{color:rgba(255,255,255,0.60)}
+    .csr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .csr-card{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-top:2px solid var(--b3);border-radius:var(--rm);padding:24px 20px;transition:all var(--tr)}
+    .csr-card:hover{background:rgba(255,255,255,0.13);transform:translateY(-3px)}
+    .csr-ico{font-size:30px;margin-bottom:12px;display:block}
+    .csr-card h3{font-family:var(--fd);font-size:17px;font-weight:700;color:#fff;margin-bottom:8px}
+    .csr-card p{font-size:13px;color:rgba(255,255,255,0.60);line-height:1.65}
+
+    /* ─── CTA STRIP ─── */
+    .cta-sec{background:linear-gradient(135deg,var(--b1) 0%,var(--b2) 100%);padding:60px 0;position:relative;overflow:hidden}
+    .cta-sec::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,0.05) 1px,transparent 1px);background-size:22px 22px}
+    .cta-sec::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold2),var(--gold),transparent)}
+    .cta-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:28px;position:relative;z-index:1}
+    .cta-inner h2{font-family:var(--fd);font-weight:700;color:#fff;font-size:clamp(24px,3.2vw,36px);margin-bottom:8px}
+    .cta-inner p{font-size:15px;color:rgba(255,255,255,0.72);max-width:480px;line-height:1.6}
+    .cta-btns{display:flex;gap:12px;flex-wrap:wrap;flex-shrink:0}
+    .btn-cta{background:#fff;color:var(--b1);padding:13px 28px;border-radius:var(--r);font-family:var(--fb);font-weight:700;font-size:14.5px;box-shadow:0 4px 16px rgba(0,0,0,0.18);transition:all var(--tr)}
+    .btn-cta:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(0,0,0,0.26)}
+    .btn-cta-o{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.42);padding:12px 28px;border-radius:var(--r);font-family:var(--fb);font-weight:600;font-size:14.5px;transition:all var(--tr)}
+    .btn-cta-o:hover{border-color:#fff;background:rgba(255,255,255,0.10)}
+
+    /* ─── FOOTER ─── */
+    footer{background:var(--b1);color:rgba(255,255,255,0.62);padding:60px 0 0}
+    .ft-bar{height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2),var(--b3));margin-bottom:60px}
+    .ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:44px}
+    .ft-brand p{font-size:13px;line-height:1.75;max-width:270px;margin:14px 0 18px}
+    .ft-logo-name{font-family:var(--fd);font-size:16px;font-weight:700;color:#fff!important;display:block;line-height:1.2}
+    .ft-logo-sub{font-size:9.5px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--b3)!important;display:block}
+    .ft-social{display:flex;gap:9px}
+    .ft-soc{width:36px;height:36px;background:rgba(255,255,255,0.09);border:1px solid rgba(255,255,255,0.10);border-radius:var(--r);display:grid;place-items:center;font-size:13px;font-weight:700;color:rgba(255,255,255,0.65);transition:all var(--tr)}
+    .ft-soc:hover{background:var(--b3);color:var(--b1);border-color:var(--b3)}
+    .ft-col h4{font-size:10.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-bottom:16px;padding-bottom:9px;border-bottom:1px solid rgba(255,255,255,0.08)}
+    .ft-col ul{display:flex;flex-direction:column;gap:9px}
+    .ft-col a{font-size:13px;color:rgba(255,255,255,0.52);transition:color var(--tr);display:flex;align-items:center;gap:5px}
+    .ft-col a::before{content:'›';color:var(--b3);font-weight:700}
+    .ft-col a:hover{color:#fff}
+    .ft-bot{border-top:1px solid rgba(255,255,255,0.08);padding:18px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+    .ft-bot p{font-size:12px;color:rgba(255,255,255,0.28)}
+    .ft-bot-links{display:flex;gap:18px;flex-wrap:wrap}
+    .ft-bot-links a{font-size:12px;color:rgba(255,255,255,0.28);transition:color var(--tr)}
+    .ft-bot-links a:hover{color:rgba(255,255,255,0.75)}
+
+    /* ─── IN-PAGE NAV TABS ─── */
+    .tab-nav{background:var(--white);border-bottom:2px solid var(--border);position:sticky;top:72px;z-index:100;box-shadow:0 2px 8px rgba(26,35,126,0.06)}
+    .tab-list{display:flex;gap:2px;overflow-x:auto;padding:0 4px;scrollbar-width:none}
+    .tab-list::-webkit-scrollbar{display:none}
+    .tab-link{display:block;padding:14px 18px;font-size:13px;font-weight:600;color:var(--ink3);white-space:nowrap;border-bottom:3px solid transparent;transition:all var(--tr)}
+    .tab-link:hover{color:var(--b1)}
+    .tab-link.active{color:var(--b1);border-bottom-color:var(--b1)}
+
+    /* RESPONSIVE */
+    @media(max-width:980px){
+      .topbar-links,.nav-menu{display:none}
+      .ham{display:flex}
+      .intro-grid,.chief-grid,.msg-grid{grid-template-columns:1fr}
+      .vm-grid{grid-template-columns:1fr 1fr}
+      .obj-grid{grid-template-columns:1fr}
+      .val-grid{grid-template-columns:repeat(3,1fr)}
+      .adv-grid{grid-template-columns:1fr 1fr}
+      .csr-grid{grid-template-columns:1fr 1fr}
+      .ft-grid{grid-template-columns:1fr 1fr;gap:24px}
+    }
+    @media(max-width:600px){
+      .topbar{display:none}
+      .container{padding:0 16px}
+      .sec{padding:56px 0}
+      .vm-grid,.val-grid,.csr-grid,.adv-grid,.obj-grid{grid-template-columns:1fr}
+      .ft-grid{grid-template-columns:1fr}
+      .ft-bot{flex-direction:column;text-align:center}
+      .cta-inner{flex-direction:column;text-align:center}
+      .cta-btns{justify-content:center}
+    }
+  </style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-inner">
+      <div class="topbar-social">
+        <a href="#" class="soc-icon" aria-label="Facebook">f</a>
+        <a href="#" class="soc-icon" aria-label="Instagram">&#9650;</a>
+        <a href="#" class="soc-icon" aria-label="YouTube">&#9654;</a>
+      </div>
+      <div class="topbar-links">
+        <a href="disclosures.html#grievance">Grievance Redressal</a>
+        <span class="topbar-sep">|</span>
+        <a href="disclosures.html#nirf">NIRF</a>
+        <span class="topbar-sep">|</span>
+        <a href="disclosures.html">Mandatory Disclosure</a>
+        <span class="topbar-sep">|</span>
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="logo">
+        <img src="images/aim-logo.png" alt="AIM Bhopal Logo" class="logo-img" width="56" height="56" loading="eager">
+        <div class="logo-text">
+          <span class="name">Anand Institute of Management</span>
+          <span class="tag">AIM Bhopal &middot; Est. 2015</span>
+        </div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-drop active">
+          <a href="about.html">About <svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <ul class="drop">
+            <li><a href="about.html">About AIM</a></li>
+            <li><a href="about.html#vision">Vision &amp; Mission</a></li>
+            <li><a href="about.html#governance">Governance</a></li>
+            <li><a href="about.html#chairman">Chairman&rsquo;s Message</a></li>
+            <li><a href="about.html#director">Director&rsquo;s Message</a></li>
+            <li><a href="about.html#csr">Social Responsibility</a></li>
+          </ul>
+        </li>
+        <li><a href="admissions.html">Admission</a></li>
+        <li class="has-drop">
+          <a href="academics.html">Academics <svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <ul class="drop">
+            <li><a href="academics.html">MBA Programme</a></li>
+            <li><a href="academics.html#curriculum">Curriculum &amp; Syllabus</a></li>
+            <li><a href="academics.html#pedagogy">Teaching Methodology</a></li>
+            <li><a href="academics.html#mdp">MDPs &amp; FDPs</a></li>
+          </ul>
+        </li>
+        <li class="has-drop">
+          <a href="faculty.html">Faculty <svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <ul class="drop">
+            <li><a href="faculty.html">Faculty Profiles</a></li>
+            <li><a href="faculty.html#visiting">Visiting Faculty</a></li>
+            <li><a href="faculty.html#research">Research &amp; Publications</a></li>
+          </ul>
+        </li>
+        <li><a href="training.html">Training</a></li>
+        <li class="has-drop">
+          <a href="campus.html">Campus Life <svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <ul class="drop">
+            <li><a href="campus.html">Campus Overview</a></li>
+            <li><a href="campus.html#facilities">Facilities</a></li>
+            <li><a href="campus.html#clubs">Clubs &amp; Committees</a></li>
+            <li><a href="campus.html#events">Events</a></li>
+          </ul>
+        </li>
+        <li class="has-drop">
+          <a href="placements.html">Placement Cell <svg class="chev" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <ul class="drop">
+            <li><a href="placements.html">Placement Overview</a></li>
+            <li><a href="placements.html#process">Recruitment Process</a></li>
+            <li><a href="placements.html#recruiters">Invite Recruiters</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="disclosures.html">Mandatory Disclosure</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html" class="nav-apply">Apply Now</a></li>
+      </ul>
+      <button class="ham" aria-label="Toggle mobile menu" aria-expanded="false" id="ham">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <a href="index.html" class="mob-link">Home</a>
+    <a href="about.html" class="mob-link">About AIM</a>
+    <div class="mob-sub">
+      <a href="about.html#vision">Vision &amp; Mission</a>
+      <a href="about.html#governance">Governance</a>
+      <a href="about.html#chairman">Chairman&rsquo;s Message</a>
+    </div>
+    <a href="admissions.html" class="mob-link">Admission</a>
+    <a href="academics.html" class="mob-link">Academics</a>
+    <a href="faculty.html" class="mob-link">Faculty</a>
+    <a href="training.html" class="mob-link">Training</a>
+    <a href="campus.html" class="mob-link">Campus Life</a>
+    <a href="placements.html" class="mob-link">Placement Cell</a>
+    <a href="gallery.html" class="mob-link">Gallery</a>
+    <a href="disclosures.html" class="mob-link">Mandatory Disclosure</a>
+    <a href="contact.html" class="mob-link">Contact</a>
+    <a href="enquiry.html" class="mob-cta">Apply Now &rarr;</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">›</span>
+        <span>About AIM</span>
+      </nav>
+      <h1>About <em>Anand Institute</em><br>of Management</h1>
+      <p>One of Madhya Pradesh's fastest-growing B-Schools, established in 2015 under the Public Charitable Society — CHIEF. AICTE approved. Barkatullah University affiliated.</p>
+      <div class="hero-pills">
+        <span class="h-pill">&#10003; Est. 2015</span>
+        <span class="h-pill">&#10003; AICTE Approved</span>
+        <span class="h-pill">&#10003; DTE Recognised, M.P.</span>
+        <span class="h-pill">&#10003; Barkatullah University Affiliated</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- IN-PAGE TAB NAV -->
+  <nav class="tab-nav" aria-label="Page sections">
+    <div class="container">
+      <div class="tab-list">
+        <a href="#about"      class="tab-link active">About AIM</a>
+        <a href="#vision"     class="tab-link">Vision &amp; Mission</a>
+        <a href="#objectives" class="tab-link">Objectives</a>
+        <a href="#values"     class="tab-link">Values &amp; Beliefs</a>
+        <a href="#chief"      class="tab-link">The Organisation</a>
+        <a href="#governance" class="tab-link">Governance</a>
+        <a href="#advisory"   class="tab-link">Advisory Board</a>
+        <a href="#chairman"   class="tab-link">Chairman&rsquo;s Message</a>
+        <a href="#director"   class="tab-link">Director&rsquo;s Message</a>
+        <a href="#csr"        class="tab-link">Social Responsibility</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── ABOUT INTRO ── -->
+  <section class="about-intro sec" id="about">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-img-wrap reveal">
+          <img src="images/campus-building.jpg" alt="AIM Bhopal Campus" loading="lazy">
+          <div class="intro-img-badge">
+            <div class="num">2015</div>
+            <div class="lbl">Year of Establishment</div>
+          </div>
+        </div>
+        <div class="intro-text reveal">
+          <p class="kicker">Who We Are</p>
+          <h2 class="h2">A <em style="font-style:italic;color:var(--b2)">Dynamic B-School</em> of Madhya Pradesh</h2>
+          <p>Anand Institute of Management (AIM) has emerged as one of the fastest transforming and most dynamic B-Schools of Madhya Pradesh. Founded in 2015 under the Public Charitable Society — CHIEF, AIM is a benchmark of academic excellence and professional integrity.</p>
+          <p>The institute is guided and managed by former ministers, senior officers, and experienced academicians with exposure to premier institutions including IIMs, ensuring strong leadership and visionary governance.</p>
+          <p>AIM offers pioneering, industry-focused MBA programs designed to bridge the gap between academia and corporate expectations. Our corporate interface ensures practical exposure alongside rigorous academic learning.</p>
+          <ul class="accred-list">
+            <li class="accred-item"><span class="accred-dot"></span>Approved by AICTE, New Delhi</li>
+            <li class="accred-item"><span class="accred-dot"></span>Recognised by DTE, Govt. of Madhya Pradesh</li>
+            <li class="accred-item"><span class="accred-dot"></span>Affiliated to Barkatullah University, Bhopal</li>
+            <li class="accred-item"><span class="accred-dot"></span>Annual intake of 180 students</li>
+          </ul>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a href="admissions.html" class="btn-pri">Apply for Admission</a>
+            <a href="#vision" class="btn-sec">Our Vision</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VISION MISSION VALUES ── -->
+  <section class="vm-sec" id="vision">
+    <div class="container">
+      <p class="kicker" style="color:var(--b3)"><span style="width:22px;height:2px;background:var(--b3);border-radius:2px;display:inline-block"></span>&nbsp;Vision, Mission &amp; Values</p>
+      <h2 class="h2" style="color:#fff;margin-bottom:10px">Our Guiding <em style="font-style:italic;color:var(--b3)">Philosophy</em></h2>
+      <p style="color:rgba(255,255,255,0.60);font-size:15px;max-width:580px;line-height:1.75;margin-bottom:48px">We envision manifesting knowledge and shaping young minds towards creating socially responsible leaders committed to excellence.</p>
+      <div class="vm-grid">
+        <article class="vm-card reveal">
+          <div class="vm-icon">&#128270;</div>
+          <h3>Our Vision</h3>
+          <p>We envision manifesting knowledge and shaping young minds towards creating socially responsible leaders committed to excellence in management and society.</p>
+        </article>
+        <article class="vm-card reveal">
+          <div class="vm-icon">&#127919;</div>
+          <h3>Our Mission</h3>
+          <p>To continuously innovate academic systems to meet evolving business demands; provide affordable, inclusive learning; instill strong values and ethics; and develop future business leaders with analytical thinking and decision-making capabilities.</p>
+        </article>
+        <article class="vm-card reveal">
+          <div class="vm-icon">&#10024;</div>
+          <h3>Our Core Values</h3>
+          <p><strong style="color:var(--b3)">Excellence</strong> — highest standards in academics.<br><strong style="color:var(--b3)">Innovation</strong> — creativity and critical thinking.<br><strong style="color:var(--b3)">Ethics</strong> — integrity and transparency.<br><strong style="color:var(--b3)">Commitment</strong> — dedication to all stakeholders.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── OBJECTIVES ── -->
+  <section class="obj-sec sec" id="objectives">
+    <div class="container">
+      <p class="kicker">Strategic Objectives</p>
+      <h2 class="h2">Our <em style="font-style:italic;color:var(--b2)">Objectives</em></h2>
+      <p class="lead">Five pillars that guide every decision we make at AIM — from curriculum design to community engagement.</p>
+      <div class="obj-grid">
+        <article class="obj-card reveal">
+          <div class="obj-num">01</div>
+          <h3>Global Centre of Excellence</h3>
+          <p>Position AIM as a pre-eminent, multicultural business school advancing global management knowledge and professional practice.</p>
+        </article>
+        <article class="obj-card reveal">
+          <div class="obj-num">02</div>
+          <h3>Shape Leaders with Purpose</h3>
+          <p>Develop future business leaders with strong character, competence, and commitment who lead responsibly and ethically.</p>
+        </article>
+        <article class="obj-card reveal">
+          <div class="obj-num">03</div>
+          <h3>Bridge Academia &amp; Industry</h3>
+          <p>Become the preferred knowledge partner for governments, NGOs, multinational corporations, and media through impactful research and expertise.</p>
+        </article>
+        <article class="obj-card reveal">
+          <div class="obj-num">04</div>
+          <h3>Foster Collaborative Leadership</h3>
+          <p>Form professionals who work for others and with others, nurturing teamwork, inclusivity, and a global perspective.</p>
+        </article>
+        <article class="obj-card reveal" style="grid-column:1/-1">
+          <div class="obj-num">05</div>
+          <h3>Create Societal Impact</h3>
+          <p>Prepare graduates who contribute meaningfully to their organisations while driving positive transformation in society at large.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VALUES & BELIEFS ── -->
+  <section class="val-sec sec" id="values">
+    <div class="container">
+      <div class="row-hd">
+        <div>
+          <p class="kicker">What We Stand For</p>
+          <h2 class="h2">Values &amp; <em style="font-style:italic;color:var(--b2)">Beliefs</em></h2>
+        </div>
+        <p class="lead" style="margin-bottom:0">"Quality and Excellence in Education" — our unwavering commitment to every student and stakeholder.</p>
+      </div>
+      <div class="val-grid">
+        <article class="val-card reveal">
+          <div class="val-icon">&#127775;</div>
+          <h3>Excellence</h3>
+          <p>Striving for the highest standards in academics and professional development</p>
+        </article>
+        <article class="val-card reveal">
+          <div class="val-icon">&#128161;</div>
+          <h3>Innovation</h3>
+          <p>Encouraging creativity, critical thinking, and forward-looking ideas</p>
+        </article>
+        <article class="val-card reveal">
+          <div class="val-icon">&#9878;</div>
+          <h3>Ethics</h3>
+          <p>Upholding integrity, transparency, and moral responsibility in all endeavors</p>
+        </article>
+        <article class="val-card reveal">
+          <div class="val-icon">&#128握;</div>
+          <h3>Commitment</h3>
+          <p>Demonstrating dedication to students, stakeholders, and societal progress</p>
+        </article>
+        <article class="val-card reveal">
+          <div class="val-icon">&#128101;</div>
+          <h3>Teamwork</h3>
+          <p>Fostering respect, discipline, teamwork, and lifelong learning</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── THE ORGANISATION (CHIEF) ── -->
+  <section class="chief-sec sec" id="chief">
+    <div class="container">
+      <p class="kicker">The Organisation</p>
+      <h2 class="h2">Center of Human Initiative &amp; <em style="font-style:italic;color:var(--b2)">Educational Furtherance</em></h2>
+      <p class="lead">CHIEF is a distinguished voluntary, nonprofit social welfare and educational organisation, incorporated under the Madhya Pradesh Society Act.</p>
+      <div class="chief-grid">
+        <div class="reveal">
+          <div class="chief-card" style="margin-bottom:20px">
+            <h3>Mission of CHIEF</h3>
+            <p>CHIEF is dedicated to establishing and operating Technical Education Colleges, Business Management Institutes, Medical Education Colleges, and Research Centers. The society firmly believes that education is the most powerful instrument for empowering individuals and transforming society.</p>
+            <p>Through its institutions, CHIEF strives to deliver quality education and professional training that prepares students to meet the challenges of a dynamic and globally competitive environment.</p>
+          </div>
+          <div class="chief-card">
+            <h3>Vision of CHIEF</h3>
+            <p>To emerge as a pioneer in higher education and research by fostering academic excellence, innovative teaching methodologies, and a strong sense of social responsibility. We aspire to build institutions that nurture intellectual growth, professional competence, skill development, and strong ethical values among students.</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="chief-card">
+            <h3>Governance &amp; Registration</h3>
+            <p>The affairs of CHIEF are managed by an Executive Council comprising eminent individuals who bring vast experience across various fields. The organisation follows a democratic and transparent governance structure.</p>
+            <div class="chief-reg">
+              <p>&#128205; Registration Number: BHOPAL HOSHANGABAD SAMBHAG 8159</p>
+              <p>&#128197; Registration Date: 14th June 2000</p>
+              <p>&#127968; 30-32, New MLA Colony, Jawahar Chowk, Bus Depot, Bhopal – 462003</p>
+            </div>
+            <h3 style="margin-top:24px;margin-bottom:12px">Institutions Managed</h3>
+            <p>The society has established Anand Institute of Management (AIM), which offers MBA, BBA, BA, B.Com, B.Ed., and M.Ed. courses, committed to academic excellence, research-driven learning, and state-of-the-art infrastructure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SOCIETY GOVERNING BODY ── -->
+  <section class="gov-sec sec" id="governance">
+    <div class="container">
+      <p class="kicker">Governance</p>
+      <h2 class="h2" style="margin-bottom:14px">AIM Board of <em style="font-style:italic;color:var(--b2)">Governors</em></h2>
+      <p class="lead">Constituted as per AICTE norms, the Governing Body plays a vital role in strategic policymaking, effective governance, and the overall development of the institution.</p>
+      <div class="table-wrap reveal">
+        <table>
+          <thead>
+            <tr><th>S.No.</th><th>Name</th><th>Designation</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td class="td-name">Shri Rajeev Choudhary</td><td><span class="td-badge">Chairman</span></td></tr>
+            <tr><td>2</td><td class="td-name">Shri Vikas Choudhary, Secretary, CHIEF</td><td>Member</td></tr>
+            <tr><td>3</td><td class="td-name">Ms. Anjali Choudhary, Treasurer, CHIEF</td><td>Member</td></tr>
+            <tr><td>4</td><td class="td-name">Ms. Parul Choudhary, Joint Secretary, CHIEF</td><td>Member</td></tr>
+            <tr><td>5</td><td>Nominee of the Affiliating University</td><td>Member</td></tr>
+            <tr><td>6</td><td>Nominee of AICTE (Ex-officio)</td><td>Member</td></tr>
+            <tr><td>7</td><td>Nominee of State Government (Ex-officio)</td><td>Member</td></tr>
+            <tr><td>8</td><td>Industrialist / Technologist / Educationist nominated by State Govt.</td><td>Member</td></tr>
+            <tr><td>9</td><td class="td-name">Dr. Vijay Kumar Jain, Director AIM</td><td><span class="td-badge">Member Secretary</span></td></tr>
+            <tr><td>10</td><td class="td-name">Dr. Sanjay Payasi, Professor</td><td>Member</td></tr>
+            <tr><td>11</td><td class="td-name">Dr. Shishir Kumar Shukla, Associate Professor</td><td>Member</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ADVISORY BOARD ── -->
+  <section class="adv-sec sec" id="advisory">
+    <div class="container">
+      <p class="kicker">Expert Guidance</p>
+      <h2 class="h2">Advisory <em style="font-style:italic;color:var(--b2)">Board</em></h2>
+      <p class="lead">An esteemed group of top leaders from Industry, Education, and General Administration who provide invaluable guidance on academic, research, and strategic planning matters.</p>
+      <div class="adv-grid">
+        <article class="adv-card reveal">
+          <div class="adv-av">PS</div>
+          <h3>Prof. Praveen Sahu</h3>
+          <div class="role">Head, Department of Commerce &amp; Dean, School of Commerce and Management</div>
+          <div class="inst">Central University of Rajasthan</div>
+        </article>
+        <article class="adv-card reveal">
+          <div class="adv-av">NM</div>
+          <h3>Dr. Nikhil K. Mehta</h3>
+          <div class="role">Professor</div>
+          <div class="inst">Indian Institute of Management Mumbai</div>
+        </article>
+        <article class="adv-card reveal">
+          <div class="adv-av">AD</div>
+          <h3>Dr. Anil Dhagat</h3>
+          <div class="role">Vice Chancellor</div>
+          <div class="inst">Shri Krishna University, Chhatarpur</div>
+        </article>
+        <article class="adv-card reveal">
+          <div class="adv-av">RA</div>
+          <h3>Mr. Rajeev Agarwal</h3>
+          <div class="role">President</div>
+          <div class="inst">All Industries Association, Mandideep</div>
+        </article>
+        <article class="adv-card reveal">
+          <div class="adv-av">RD</div>
+          <h3>Shri R. G. Dwivedi</h3>
+          <div class="role">Ex-General Manager</div>
+          <div class="inst">MP Financial Corporation</div>
+        </article>
+        <article class="adv-card reveal">
+          <div class="adv-av">RB</div>
+          <h3>Ms. Rashmi Bhargava</h3>
+          <div class="role">Chief Executive Officer</div>
+          <div class="inst">Denovo</div>
+        </article>
+        <article class="adv-card reveal">
+          <div class="adv-av">PK</div>
+          <h3>Prof. P. K. Sharma</h3>
+          <div class="role">Professor</div>
+          <div class="inst">Vardhman Mahaveer Open University, Kota</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CHAIRMAN'S MESSAGE ── -->
+  <section class="msg-sec sec" id="chairman">
+    <div class="container">
+      <p class="kicker">From the Chairman</p>
+      <h2 class="h2">Chairman&rsquo;s <em style="font-style:italic;color:var(--b2)">Message</em></h2>
+      <div class="msg-grid">
+        <article class="msg-card reveal">
+          <div class="msg-qm">&ldquo;</div>
+          <p class="msg-role">Chairman&rsquo;s Message</p>
+          <blockquote>&ldquo;Welcome to Anand Institute of Management (AIM), a dynamic center of excellence committed to delivering quality education, research, executive training, and consultancy in management.&rdquo;</blockquote>
+          <p class="msg-body">Our mission is to nurture future leaders equipped with knowledge, skills, and strong ethical values to contribute meaningfully to industry and society. At AIM, we foster an environment of openness and innovation where students are encouraged to think critically, embrace challenges, and grow into confident, competent professionals. We believe education is not merely about earning a degree, but about building character, confidence, and self-reliance.</p>
+          <p class="msg-body">I extend my heartfelt gratitude to our dedicated faculty, staff, industry partners, and students for their unwavering support and commitment to excellence. I invite you to be part of AIM and join us on a journey of knowledge, innovation, and leadership.</p>
+          <div class="msg-author">
+            <div class="msg-av">RC</div>
+            <div>
+              <p class="msg-name">Shri R. S. Choudhary</p>
+              <p class="msg-title">Chairman, Anand Institute of Management</p>
+            </div>
+          </div>
+        </article>
+        <div class="reveal" style="display:flex;flex-direction:column;gap:20px">
+          <div style="background:var(--bll);border:1px solid var(--border);border-radius:var(--rl);padding:28px">
+            <p class="kicker" style="margin-bottom:12px">AIM&rsquo;s Punchlines</p>
+            <p style="font-family:var(--fd);font-style:italic;font-size:20px;color:var(--b1);font-weight:700;margin-bottom:10px">&ldquo;Where Leadership Begins and Excellence Becomes a Habit.&rdquo;</p>
+            <p style="font-family:var(--fd);font-style:italic;font-size:20px;color:var(--b2);font-weight:700">&ldquo;Transforming Potential into Corporate Power.&rdquo;</p>
+          </div>
+          <div style="background:var(--bl);border-radius:var(--rm);padding:24px">
+            <p class="kicker" style="margin-bottom:12px">Quick Facts</p>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:10px"><span style="font-size:13.5px;color:var(--ink3)">Established</span><span style="font-size:13.5px;font-weight:700;color:var(--b1)">2015</span></div>
+              <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:10px"><span style="font-size:13.5px;color:var(--ink3)">Annual Intake</span><span style="font-size:13.5px;font-weight:700;color:var(--b1)">180 Students</span></div>
+              <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:10px"><span style="font-size:13.5px;color:var(--ink3)">Programme Duration</span><span style="font-size:13.5px;font-weight:700;color:var(--b1)">2 Years (4 Semesters)</span></div>
+              <div style="display:flex;justify-content:space-between"><span style="font-size:13.5px;color:var(--ink3)">Degree Awarded By</span><span style="font-size:13.5px;font-weight:700;color:var(--b1)">Barkatullah University</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DIRECTOR'S MESSAGE ── -->
+  <section class="sec" id="director" style="background:var(--white)">
+    <div class="container">
+      <p class="kicker">From the Director</p>
+      <h2 class="h2">Director&rsquo;s <em style="font-style:italic;color:var(--b2)">Message</em></h2>
+      <div class="msg-grid">
+        <article class="msg-card reveal">
+          <div class="msg-qm">&ldquo;</div>
+          <p class="msg-role">Director&rsquo;s Message</p>
+          <blockquote>&ldquo;Welcome to Anand Institute of Management (AIM), a premier institution dedicated to fostering future leaders equipped with the knowledge, skills, and values to navigate and excel in an evolving corporate world.&rdquo;</blockquote>
+          <p class="msg-body">Our MBA programme is meticulously designed to align with global business standards and best practices. The curriculum is industry-oriented, incorporating a rigorous academic structure that integrates theoretical knowledge with practical application. Through an innovative blend of case studies, real-world projects, and experiential learning, our students develop a well-rounded business acumen.</p>
+          <p class="msg-body">AIM has built a legacy of excellence by continuously evolving its teaching methodologies to meet the ever-changing demands of the global economy. We remain committed to building a vibrant community of value creators who will drive progress and transformation in their respective fields.</p>
+          <div class="msg-author">
+            <div class="msg-av">SP</div>
+            <div>
+              <p class="msg-name">Prof. Sanjay Payasi</p>
+              <p class="msg-title">Director, Anand Institute of Management</p>
+            </div>
+          </div>
+        </article>
+        <div class="reveal">
+          <div style="background:var(--bll);border:1px solid var(--border);border-radius:var(--rl);padding:28px">
+            <p class="kicker" style="margin-bottom:16px">Director&rsquo;s Profile Highlights</p>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div style="display:flex;gap:12px;align-items:flex-start">
+                <span style="font-size:18px">&#127891;</span>
+                <div><p style="font-size:14px;font-weight:700;color:var(--b1)">Multiple Master's Degrees</p><p style="font-size:13px;color:var(--ink3)">Mathematics, Personnel Management &amp; Marketing Management</p></div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start">
+                <span style="font-size:18px">&#128218;</span>
+                <div><p style="font-size:14px;font-weight:700;color:var(--b1)">24+ Published Books</p><p style="font-size:13px;color:var(--ink3)">Mathematics, Computer Applications and Business Management</p></div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start">
+                <span style="font-size:18px">&#127979;</span>
+                <div><p style="font-size:14px;font-weight:700;color:var(--b1)">Board Memberships</p><p style="font-size:13px;color:var(--ink3)">Member of Board of Studies in 23 Universities across 12 states &amp; 2 UTs</p></div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start">
+                <span style="font-size:18px">&#128290;</span>
+                <div><p style="font-size:14px;font-weight:700;color:var(--b1)">Patent Holder</p><p style="font-size:13px;color:var(--ink3)">Research interests in ERP, MIS, quantitative methods and business simulations</p></div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start">
+                <span style="font-size:18px">&#128202;</span>
+                <div><p style="font-size:14px;font-weight:700;color:var(--b1)">20+ Years Experience</p><p style="font-size:13px;color:var(--ink3)">Expertise in SPSS, Python, Tableau, Power BI, and Qlik</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SOCIAL RESPONSIBILITY ── -->
+  <section class="csr-sec" id="csr">
+    <div class="container">
+      <p class="kicker">Our Obligations</p>
+      <h2 class="h2">Social <em style="font-style:italic;color:var(--b3)">Responsibility</em></h2>
+      <p class="lead">At AIM, we believe education extends beyond the classroom. Our initiatives nurture a spirit of service, responsibility, and sustainable development among our students.</p>
+      <div class="csr-grid">
+        <article class="csr-card reveal">
+          <span class="csr-ico">&#128187;</span>
+          <h3>Bridging the Digital Divide</h3>
+          <p>AIM actively promotes computer literacy among those unfamiliar with digital tools, helping individuals explore new opportunities and build a better future.</p>
+        </article>
+        <article class="csr-card reveal">
+          <span class="csr-ico">&#127881;</span>
+          <h3>Vocational Training</h3>
+          <p>Every summer, AIM conducts free vocational training programs for economically disadvantaged children, equipping them with practical skills for sustainable livelihoods.</p>
+        </article>
+        <article class="csr-card reveal">
+          <span class="csr-ico">&#127807;</span>
+          <h3>Environmental Sustainability</h3>
+          <p>AIM organizes an annual Tree Plantation Drive on its Annual Day, promoting ecological awareness and contributing to building a greener planet.</p>
+        </article>
+        <article class="csr-card reveal">
+          <span class="csr-ico">&#128172;</span>
+          <h3>Spoken English &amp; Personality</h3>
+          <p>Regular Spoken English and Personality Development programs to enhance communication skills, confidence, and leadership abilities for global readiness.</p>
+        </article>
+        <article class="csr-card reveal">
+          <span class="csr-ico">&#129504;</span>
+          <h3>Spiritual Enrichment</h3>
+          <p>AIM invites spiritual leaders and motivational speakers to guide students and staff, fostering positivity, mindfulness, and strong ethical values.</p>
+        </article>
+        <article class="csr-card reveal">
+          <span class="csr-ico">&#10084;</span>
+          <h3>Prayas — Blood Donation</h3>
+          <p>Every year on November 14th (Pt. Nehru's birthday), AIM organizes a Blood Donation Camp — 'Prayas' — reinforcing humanitarian service and social welfare.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-sec">
+    <div class="container">
+      <div class="cta-inner">
+        <div>
+          <h2>Ready to Join AIM?</h2>
+          <p>Take the first step toward your MBA journey at one of Madhya Pradesh's most dynamic B-Schools. Applications open for 2025–26.</p>
+        </div>
+        <div class="cta-btns">
+          <a href="enquiry.html"    class="btn-cta">Apply for Admission</a>
+          <a href="admissions.html" class="btn-cta-o">View Eligibility</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-bar"></div>
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <a href="index.html" class="logo">
+          <img src="images/aim-logo.png" alt="AIM Logo" class="logo-img" width="52" height="52" loading="lazy">
+          <div class="logo-text"><span class="ft-logo-name">Anand Institute of Management</span><span class="ft-logo-sub">AIM Bhopal &middot; Est. 2015</span></div>
+        </a>
+        <p>An AICTE approved, Barkatullah University affiliated MBA college in Bhopal, Madhya Pradesh. Shaping future business leaders since 2015.</p>
+        <div class="ft-social">
+          <a href="#" class="ft-soc" aria-label="Facebook">f</a>
+          <a href="#" class="ft-soc" aria-label="Instagram">in</a>
+          <a href="#" class="ft-soc" aria-label="LinkedIn">Li</a>
+          <a href="#" class="ft-soc" aria-label="YouTube">&#9654;</a>
+        </div>
+      </div>
+      <div class="ft-col"><h4>About</h4><ul>
+        <li><a href="about.html">About AIM</a></li>
+        <li><a href="about.html#vision">Vision &amp; Mission</a></li>
+        <li><a href="about.html#governance">Governance</a></li>
+        <li><a href="about.html#chairman">Chairman&rsquo;s Message</a></li>
+        <li><a href="about.html#csr">Social Responsibility</a></li>
+      </ul></div>
+      <div class="ft-col"><h4>Academics</h4><ul>
+        <li><a href="academics.html">MBA Programme</a></li>
+        <li><a href="academics.html#curriculum">Curriculum</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="faculty.html#research">Research</a></li>
+        <li><a href="training.html">Training</a></li>
+      </ul></div>
+      <div class="ft-col"><h4>Admissions</h4><ul>
+        <li><a href="admissions.html">Apply Now</a></li>
+        <li><a href="admissions.html#eligibility">Eligibility</a></li>
+        <li><a href="admissions.html#fees">Fee Structure</a></li>
+        <li><a href="placements.html">Placements</a></li>
+        <li><a href="disclosures.html">Disclosures &amp; NIRF</a></li>
+      </ul></div>
+    </div>
+    <div class="ft-bot">
+      <p>&copy; 2025 Anand Institute of Management, Bhopal. All rights reserved. | AICTE Approved | Barkatullah University Affiliated</p>
+      <nav class="ft-bot-links">
+        <a href="disclosures.html">AICTE Disclosures</a>
+        <a href="disclosures.html#nirf">NIRF</a>
+        <a href="disclosures.html#anti-ragging">Anti-Ragging</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+const ham=document.getElementById('ham'),mobMenu=document.getElementById('mobMenu');
+ham.addEventListener('click',()=>{const o=mobMenu.classList.toggle('open');ham.classList.toggle('open',o);ham.setAttribute('aria-expanded',o);mobMenu.setAttribute('aria-hidden',!o);document.body.style.overflow=o?'hidden':''});
+document.addEventListener('click',e=>{if(!ham.contains(e.target)&&!mobMenu.contains(e.target)){mobMenu.classList.remove('open');ham.classList.remove('open');ham.setAttribute('aria-expanded','false');mobMenu.setAttribute('aria-hidden','true');document.body.style.overflow=''}});
+window.addEventListener('resize',()=>{if(window.innerWidth>980){mobMenu.classList.remove('open');ham.classList.remove('open');document.body.style.overflow=''}});
+document.querySelectorAll('.reveal').forEach(el=>{new IntersectionObserver(([e])=>{if(e.isIntersecting){const s=Array.from(el.parentElement.querySelectorAll('.reveal'));el.style.transitionDelay=(s.indexOf(el)*80)+'ms';el.classList.add('visible')}},{threshold:0.10,rootMargin:'0px 0px -30px 0px'}).observe(el)});
+
+// Tab nav highlight on scroll
+const sections=document.querySelectorAll('main section[id]');
+const tabLinks=document.querySelectorAll('.tab-link');
+window.addEventListener('scroll',()=>{let cur='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-160)cur=s.id});tabLinks.forEach(l=>{l.classList.toggle('active',l.getAttribute('href')==='#'+cur)})},{passive:true});
+</script>
+</body>
+</html>

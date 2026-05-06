@@ -1,0 +1,19 @@
+aim-website/
+├── index.html
+├── about.html
+├── admissions.html
+├── academics.html
+├── faculty.html
+├── training.html
+├── campus.html
+├── placements.html
+├── gallery.html
+├── disclosures.html
+├── enquiry.html
+├── contact.html
+└── images/           ← PUT ALL PHOTOS HERE
+    ├── aim-logo.png
+    ├── campus-aerial.jpg
+    ├── campus-building.jpg
+    ├── students-life.jpg
+    └── campus-explore.jpg
